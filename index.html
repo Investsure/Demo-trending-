@@ -1,3 +1,132 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Swygen Ludo Banner</title>
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .swygen-banner-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #3a0ca3, #7209b7);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      z-index: 9999;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      animation: swygen-slideDown 0.6s ease-out forwards;
+    }
+
+    @keyframes swygen-slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .swygen-banner-content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      font-size: 16px;
+    }
+
+    .swygen-banner-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .swygen-banner-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .swygen-banner-highlight {
+      font-weight: 600;
+      color: #ffdd57;
+    }
+
+    .swygen-close-icon {
+      cursor: pointer;
+      font-size: 24px;
+      color: white;
+      transition: 0.3s ease;
+    }
+
+    .swygen-close-icon:hover {
+      color: #ffb703;
+      transform: scale(1.1);
+    }
+
+    .swygen-whatsapp-btn {
+      background-color: #25d366;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .swygen-whatsapp-btn:hover {
+      background-color: #1ebe5b;
+    }
+
+    @media (max-width: 768px) {
+      .swygen-banner-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .swygen-banner-left {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Banner Popup -->
+<div id="swygen-banner" class="swygen-banner-wrapper">
+  <div class="swygen-banner-content">
+    <div class="swygen-banner-left">
+      <img src="https://assets.onecompiler.app/43ea4pg72/43ejuea6k/investing.png" alt="Ludo Image" class="swygen-banner-img">
+      <div>
+        এই রকম <span class="swygen-banner-highlight"> Investment App</span> এবং <strong>Website</strong> এর জন্য যোগাযোগ করুন 
+        <span class="swygen-banner-highlight">Swygen Official</span>
+      </div>
+    </div>
+    <a class="swygen-whatsapp-btn" href="https://wa.me/message/BQ77IMY2MHW6E1" target="_blank">
+      <span class="material-icons">chat</span> WhatsApp
+    </a>
+    <span class="material-icons swygen-close-icon" onclick="document.getElementById('swygen-banner').style.display='none'">close</span>
+  </div>
+</div>
+
+<!-- Rest of the website -->
+<div style="padding-top: 90px;">
+  <!-- Website content goes here -->
+</div>
+
+</body>
+</html><br><br>
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
